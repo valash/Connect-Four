@@ -1,15 +1,23 @@
 //get cells from the dom 
 const cells = document.querySelectorAll('.cell');
-const button = document.querySelectorAll("button");
+const reset = document.querySelector('.reset');
 let currentPlayer = 1;
+
+reset.addEventListener('click',function(evt) {
+        for (let i = 0; i < cells.length; i++) {
+            const element = cells[i];
+        }
+        element.style.pointerEvents = "auto";
+        element.style.backgroundColor = "white";
+    );
+}
 
     
 
-console.log(fullGrid);
+    
 
 
-
-
+    
 for (let i = 0; i < cells.length; i++) {
     cells[i].addEventListener('click',function(evt){
         if(currentPlayer === 1){
