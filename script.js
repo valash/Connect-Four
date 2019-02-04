@@ -18,19 +18,6 @@ for (let i = 0; i < cells.length; i++) {
 })
 }
 
-var colors = new tracking.ColorTracker(["darkslateblue", "yellow"]);
-
-  colors.on('darkslateblue', function(event) {
-    if (event.color.length === "darkslateblue") {
-      // No colors were detected in this frame.
-    } else {
-      event.data.forEach(function(rect) {
-        console.log(rect.x, rect.y, rect.height, rect.width, rect.color);
-      });
-    }
-  });
-
-  tracking.track('#myVideo', colors);
 
 
 
